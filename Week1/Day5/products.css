@@ -1,0 +1,77 @@
+/* Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: rgb(7, 146, 21);
+}
+
+.product-card .original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.product-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.product-card button:hover {
+    background-color: #45a049;
+}
+
+/* Badge styles */
+.badge {
+    position: absolute;
+    top: 10px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 50%;
+}
+
+/* NEW badge on the left */
+.badge.new {
+    background-color: green;
+    left: 10px; 
+
+}
+.badge.sale {
+    background-color: red;
+    right: 10px;
+}
