@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Jonathan Dalais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Jonathan Dalais</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h1 class="section-title">PROJECTS</h1>
+        <p class="section-subtitle">Here you will find some of the personal and client projects that I created, with each project containing its own case study.</p>
+        
+        <!-- Project Card -->
+        <div class="project-card">
+            <img src="project-image1.jpg" alt="Project Screenshot" class="project-image">
+            <div class="project-details">
+                <h2>Dopefolio</h2>
+                <p>Dopefolio is a successful Open-Source project that I created which has been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc., and used by thousands of developers globally.</p>
+                <a href="#" class="btn case-study-btn">Case Study</a>
+            </div>
+        </div>
+        <!-- Add more project cards as needed -->
+    </section>
+    <div class="project-card">
+        <img src="project-image1.jpg" alt="Project Screenshot" class="project-image">
+        <div class="project-details">
+            <h2>IT Infrastructure Modernization</h2>
+            <p>
+                Led a comprehensive overhaul of our company’s IT infrastructure, transitioning to a scalable, secure, and high-performance system. This project involved deploying cloud-based solutions, enhancing network security, and integrating automation tools to streamline operations. The modernization improved system reliability, reduced downtime, and enhanced team productivity.
+            </p>
+            <a href="#" class="btn case-study-btn">Case Study</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Jonathan Dalais. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

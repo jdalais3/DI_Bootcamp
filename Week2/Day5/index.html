@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Dalais - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Jonathan Dalais</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome, I'm Jonathan Dalais</h1>
+            <p>A Team Leader in Research and Development, specializing in IT Infrastructure and Innovative Technology Solutions.</p>
+            <a href="#portfolio" class="btn">See My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated and innovative Team Leader in Research and Development, with a strong foundation in IT infrastructure and emerging technologies. Over the years, I have built and led teams in deploying cutting-edge solutions that streamline processes, enhance operational efficiency, and drive growth. My passion lies in exploring and implementing advanced technologies to solve complex problems, ensuring that organizations stay ahead in an ever-evolving tech landscape.
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <p>Here are some projects I’ve led, focusing on IT infrastructure enhancements and innovative technology implementations.</p>
+        <!-- View All Projects Button -->
+        <a href="projects.html" class="btn">View All Projects</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <p>With a deep understanding of IT infrastructure and advanced technologies, here are some of the areas I specialize in:</p>
+        <div class="skills-list">
+            <div class="skill-item">IT Infrastructure Design & Management</div>
+            <div class="skill-item">Cloud Computing (AWS, Azure)</div>
+            <div class="skill-item">Network Security</div>
+            <div class="skill-item">System Automation</div>
+            <div class="skill-item">Research & Development Leadership</div>
+            <div class="skill-item">Project Management</div>
+            <div class="skill-item">Emerging Technologies (AI, IoT)</div>
+            <!-- Add other relevant skills as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Jonathan Dalais. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
