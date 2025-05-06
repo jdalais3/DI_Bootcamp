@@ -1,0 +1,42 @@
+{
+  "name": "memory-bank",
+  "version": "1.0.0",
+  "description": "An application to help people with memory impairments",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "client": "cd client && npm start",
+    "dev:full": "concurrently \"npm run dev\" \"npm run client\"",
+    "install:all": "npm install && cd client && npm install",
+    "build": "cd client && npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "memory",
+    "health",
+    "accessibility"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "react-router-dom": "^7.5.2",
+    "sequelize": "^6.35.1",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}
